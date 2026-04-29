@@ -1,0 +1,94 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    background-image: url(img/Gemini_Generated_Image_11l2a311l2a311l2.png); /* Use a imagem que gerei */
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(5, 5, 5);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Fica presa no topo ao rolar */
+    padding: 1%;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.2); /* Fundo levemente escuro */
+    backdrop-filter: blur(10px); /* Efeito de vidro embaçado */
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1); /* Linha fina neon */
+    padding: 1%;
+    border-radius: 50px; /* Formato de pílula */      
+    border: 1px solid rgba(0, 255, 255, 0.3); /* Borda neon suave */
+    }
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10%;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 1rem;
+    width: 100%;
+        
+}
+header nav ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 100%;
+    text-transform: uppercase;
+    transition: 0.3s;
+    opacity: 0.8;
+    
+}
+header nav ul li a:hover{
+    opacity: 1;
+    color: #ff00ff; /* Muda para rosa neon */
+    text-shadow: 0 0 10px #ff00ff;
+
+
+}
+@media (max-width: 600px) { /*navegador links fica responsivo*/
+    .nav-links {
+        gap: 15px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+
+
+main .sobre-inicio { 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; /* Empilha o conteúdo */
+    justify-content: center; /*colocar o texto no meio no centro*/
+    padding: 0 10%; /* Recuo lateral */
+    
+    }
+
+main div p{ 
+    color: #00ffff;
+}
+
+main div h1 {
+    color: #ff00ff;
+}
+main .portifolio {
+    color: aliceblue;
+}
+main div h2{
+    color: #00ffff;
+}
+
+
+
+
+

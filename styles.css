@@ -1,6 +1,9 @@
 * { 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
 }
 
 body { 
@@ -11,7 +14,9 @@ body {
     background-attachment: fixed;
     color: rgb(5, 5, 5);
     font-family: 'Montserrat', sans-serif;
+    
 }
+
 
 header nav {
     display: flex;
@@ -64,31 +69,207 @@ header nav ul li a:hover{
     }
 }
 
+.conteudo-principal {
+    display: flex;                /* Ativa o alinhamento lado a lado */
+    flex-direction: row;          /* Garante que fiquem em linha */
+    justify-content: space-between; /* Empurra um para cada ponta */
+    align-items: center;          /* Alinha os dois verticalmente no centro */
+    
+    min-height: 100vh;            /* Ocupa a altura toda da tela */
+    padding: 0 10%;                /* Espaço nas laterais */
+    gap: 10px;                    /* Espaço entre o texto e o quadro */
+    box-sizing: border-box;
+    
+    
+
+    } /*verficar*/
 
 main .sobre-inicio { 
     display: flex;
     min-height: 100vh;
     flex-direction: column; /* Empilha o conteúdo */
     justify-content: center; /*colocar o texto no meio no centro*/
-    padding: 0 10%; /* Recuo lateral */
-    
+    padding: 0 5%; /* Recuo lateral */
+    padding-left: 1%;         /* Espaço entre a borda da tela e o painel */
+    box-sizing: border-box;
+    flex: 1;                      /* Ocupa espaço proporcional */
+    max-width: 650px;             /* Largura máxima do texto */
+        
     }
-
+ 
 main div p{ 
     color: #00ffff;
-}
+    padding-left: 1%;
+    letter-spacing: 5px;
+    }
 
 main div h1 {
+    text-align: left;
     color: #ff00ff;
+    font-family: Orbitron;
+    font-size: 5rem;
+    padding-left: 1%;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+
+    /* TÉCNICA : O Brilho Neon (Dois níveis para profundidade) */
+    filter: drop-shadow(0 0 10px rgba(189, 0, 255, 0.7));
+
+    /* --- TÉCNICA DO GRADIENTE DE LUZ (A BASE) --- */
+    /* Criamos um gradiente que é: Azul -> Rosa -> Luz Branca -> Rosa -> Azul */
+    /* A luz branca no meio é o "ponto de luz" que vai se mover */
+    background: linear-gradient(
+        90deg, 
+        #00ffff 0%,   /* Azul inicial */
+        #ff00ff 25%,  /* Rosa */
+        #ffffff 50%,  /* LUZ BRANCA CENTRAL (O brilho móvel) */
+        #ff00ff 75%,  /* Rosa */
+        #00ffff 100%  /* Azul final */
+    );
+    
+    /* Fazemos o gradiente ser muito maior que o texto para podermos movê-lo */
+    background-size: 200% auto; 
+    
+    /* Cortamos o fundo para o formato do texto */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    /* Deixamos o texto transparente para mostrar o fundo */
+    -webkit-text-fill-color: transparent;
+    
+    /* --- EFEITO DE BRILHO (O "GLOW" ESTÁTICO) --- */
+    /* Isso dá a base do neon (Rosa e Azul) para as letras não ficarem apagadas */
+    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.7)) 
+            drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+            
+    /* --- ATIVAÇÃO DA ANIMAÇÃO --- */
+    animation: shineNeon 6s linear infinite;
+
 }
+@keyframes shineNeon {
+    to {
+        /* Movemos a posição do fundo (gradiente) da esquerda para a direita */
+        background-position: 200% center;
+    }
+}
+.painelportifolio {
+    display: inline-block; /* Faz a caixa se ajustar ao tamanho do texto */
+    color: #00ffff; /* Azul Ciano Neon */
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.4); /* Fundo um pouco mais escuro para contraste */
+    border-radius: 5px;
+    width: 60%;      /* A caixa ocupa apenas 30% da tela */
+    padding-left: 1%;
+    
+    /* O Texto */
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 12px;                     /* Espaçamento largo entre as letras */
+    margin: 30px 0;
+    /* Efeito de Brilho */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); 
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  
+}
+
 main .portifolio {
     color: aliceblue;
+    font-family: 'Orbitron', sans-serif; /* Aquela fonte futurista */
+    font-size: 2rem;
+        
 }
 main div h2{
     color: #00ffff;
+    padding-left: 1%;
+    letter-spacing: 5px;
+    padding-bottom: 2%;
+   
 }
 
+.botão-projetos {
+    padding-left: 1%;
+    letter-spacing: 5px;
+    color: #00ffff;
+    padding-bottom: 5%;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 15px 35px;
+    border: 2px solid #00ffff;
+    width: 60%;      /* A caixa ocupa apenas 30% da tela */
+    border-radius: 5px;
+    background: transparent;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    
+}
+.botão-projetos:hover {
 
+    background: #00ffff;
+    color: #000;
+    box-shadow: 0 0 30px #00ffff, 0 0 60px rgba(0, 255, 255, 0.4);
+    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+}
 
+.quadro-codigo {
+    flex: 1;                      /* Ocupa espaço proporcional */
+    max-width: 300px;             /* Largura máxima do quadro de código */
+    width: 100%;
+    max-width: 500px;
+    background: rgba(13, 13, 13, 0.8); /* Fundo escuro semi-transparente */
+    border: 1px solid #00ffff;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    overflow: hidden;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    backdrop-filter: blur(10px);
+    
+}
+/* Cabeçalho com os botões coloridos */
+.codigo-header {
+    
+    background: rgba(0, 255, 255, 0.1);
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+.dots { display: flex; gap: 8px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
 
+.window-title {
+    margin-left: 20px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 1px;
+}
+/* Área do Código */
+.code-content {
+    display: flex;
+    padding: 30px;
+    font-size: 0.9rem;
+    line-height: 1.6;  
+    height: 10%;
+    
+    
+}
+.lista-numeros {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 20px;
+    color: rgba(0, 255, 255, 0.3); /* Números de linha discretos */
+    user-select: none;
+}
+pre { margin: 0; }
+code { color: #fff; }
 
+/* Cores de Sintaxe (Syntax Highlighting) */
+.keyword { color: #ff00ff; text-shadow: 0 0 5px #ff00ff; } /* const */
+.variable { color: #00ffff; } /* AnaKelly */
+.string { color: #f1fa8c; }   /* 'Textos' */

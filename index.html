@@ -14,25 +14,78 @@
 
 <body>
     <header><!-- cabeçalho-->
-        <nav > <!-- barra de navegação-->
-            <ul>  <!-- lista de links-->
-                <li> <a href="inicio">Inicio</a></li>
-                <li><a href="sobre">Sobre</a></li>
-                <li><a href="projetos">Projetos</a></li>
-                <li><a href="contatos">Contatos</a></li>
+        <nav> <!-- barra de navegação-->
+            <ul> <!-- lista de links-->
+                <li> <a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contatos">Contatos</a></li>
             </ul>
 
         </nav>
     </header>
-    <main id="inicio"> 
-        <div class="sobre-inicio">
-            <p>OLÁ, EU SOU</p>
-            <h1>ANA KELLY <br> <span>BORGES</span></h1>
-            <div class="portifolio">PORTFÓLIO</div>
-            <h2>DESENVOLVEDORA WEB</h2>
-            <a href="#projetos" class="botão-projetos">VER PROJETOS →</a>
-        </div>
-        
+
+    <main id="inicio">
+        <section class="conteudo-principal">
+            <div class="sobre-inicio">
+                <p>OLÁ, EU SOU</p>
+                <h1>ANA KELLY <span>BORGES</span></h1>
+                <section class="painelportifolio">
+                    <div class="portifolio">PORTFÓLIO</div>
+                </section>
+                <h2>DESENVOLVEDORA WEB</h2>
+                <a href="#projetos" class="botão-projetos">VER PROJETOS→</a>
+            </div>
+
+            <section class="codigo">
+                <div class="quadro-codigo"> <!-- inicio do quadro de codigos -->
+                    <div class="codigo-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">ana-kelly</div>
+                    </div>
+                    <div class="code-content">
+                        <div class="lista-numeros">
+                            <span>01</span><span>02</span><span>03</span><span>04</span><span>05</span>
+                            <span>06</span><span>07</span><span>08</span><span>09</span><span>10</span>
+                        </div>
+                        <pre><code>
+<span class="keyword">const</span> <span class="variable">AnaKelly</span> = {
+  desenvolvedora: <span class="string">'Web'</span>,
+  foco: [<span class="string">'Front-end'</span>],
+  paixão: <span class="string">'Criar experiências'</span>,
+  tecnologias: [
+    <span class="string">'HTML'</span>, <span class="string">'CSS'</span>,
+    ],
+  objetivo: <span class="string">'Conectar pessoas.'</span>
+};</code></pre>
+                    </div>
+                </div> <!-- final do quadro codigo-->
+            </section>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div>
+                <h2> Sobre Mim</h2>
+                <p>Desenvolvo soluções web modernas, responsivas e performáticas, transformando ideias em experiências
+                    digitais incríveis. </p>
+            </div>
+
+        </section>
+        <section id="projetos" class="projetos">
+            <h2> Projetos </h2>
+
+        </section>
+        <section id="contatos" class="contatos">
+            <h2>Meus Contatos</h2>
+        </section>
+
+
+
+
 
 </body>
 

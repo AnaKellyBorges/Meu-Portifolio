@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
     
 }
-
 body { 
     margin: 0;
     padding: 0;
@@ -74,7 +73,6 @@ header nav ul li a:hover{
     flex-direction: row;          /* Garante que fiquem em linha */
     justify-content: space-between; /* Empurra um para cada ponta */
     align-items: center;          /* Alinha os dois verticalmente no centro */
-    
     min-height: 100vh;            /* Ocupa a altura toda da tela */
     padding: 0 10%;                /* Espaço nas laterais */
     gap: 10px;                    /* Espaço entre o texto e o quadro */
@@ -282,9 +280,8 @@ code { color: #fff; }
     min-height: 100vh;
     padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
     padding-left: 10%;
-    
-    
-}
+        
+    }
 
 .texto-sobremim {
     max-width: 800px; /* Largura para o texto ficar confortável de ler */
@@ -292,8 +289,7 @@ code { color: #fff; }
     height: 4px;
     background: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
-    
-}
+    }
 .painelvidro {
     display: flex;
     justify-content: center;
@@ -305,8 +301,7 @@ code { color: #fff; }
     border-radius: 10px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
-    
-       
+          
 }
 
 .titulo-sobremim {
@@ -326,7 +321,37 @@ code { color: #fff; }
     color: #ffffff;
     margin-bottom: 20px;
 }
+.imagemsobre img {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap; /* Para funcionar no celular */
+    border-radius: 20%;
+      
+}
+.imagemsobre {
+    display: flex;
+    margin: 0 14rem;
+    border: 1px solid #00ffff;
+    border-radius: 20%;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    transition: 0.4s; /*para o efeito da foto*/
+}
+
+/* Efeito de brilho extra ao passar o mouse na foto */
+.imagemsobre:hover {
+    box-shadow: 0 0 50px  #00ffff;
+    transform: translateY(-10px);
+}
+    
 .projetos {
+    display: flex;
     width: 100%;
+    color: #00ffff;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px; 
     
 }

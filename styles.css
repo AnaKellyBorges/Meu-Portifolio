@@ -343,15 +343,92 @@ code { color: #fff; }
     box-shadow: 0 0 50px  #00ffff;
     transform: translateY(-10px);
 }
+.projetoslinha {
+    max-width: 800px; /* Largura para o texto ficar confortável de ler */
+    height: 4px;
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+    margin-left: auto;
+    margin-right: auto;   
+}
     
 .projetos {
-    display: flex;
-    width: 100%;
+    text-align: center;
     color: #00ffff;
     justify-content: center;
     min-height: 100vh;
     padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
     font-family: 'Orbitron', sans-serif;
     font-size: 25px; 
+     
+}
+.contatoslinha {
+    max-width: 800px; /* Largura para o texto ficar confortável de ler */
+    height: 4px;
+    background: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+    margin-left: auto;
+    margin-right: auto;  
+
+}
+.contatos {
+    text-align: center;
+    color: #00ffff;
+    min-height: 100vh;
+    padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px; 
     
+}
+.social-links {
+    gap: 15px;
+    width: 30%;      /* A caixa ocupa apenas 30% da tela */
+    padding-top: 10%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+        
+    }
+.social-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgb(2, 244, 252);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px);          /* Efeito de desfoque no fundo */
+    
+}
+.social-card:hover {
+    border-color: #ff00ff;
+    background: rgba(255, 0, 255, 0.05);
+    transform: translateX(10px); /* Move levemente para a direita */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.719);
+
+}
+.social-title {
+    text-align: left;
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 2px;
+        
+}
+.social-sub {
+  color: #00ffff;
+    font-size: 0.9rem;  
+    
+}
+.textocontatos {
+    backdrop-filter: blur(20px);          /* Efeito de desfoque no fundo */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgb(2, 244, 252);
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgb(2, 244, 252);
+    padding: 20px 20px;
+
+
 }

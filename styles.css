@@ -1,49 +1,59 @@
-* { 
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
-body { 
+
+body {
     margin: 0;
     padding: 0;
-    background-image: url(img/Gemini_Generated_Image_11l2a311l2a311l2.png); /* Use a imagem que gerei */
+    background-image: url(img/Gemini_Generated_Image_11l2a311l2a311l2.png);
+    /* Use a imagem que gerei */
     background-size: cover;
     background-attachment: fixed;
     color: rgb(5, 5, 5);
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
 
 header nav {
     display: flex;
     justify-content: space-between;
-    position: fixed; /* Fica presa no topo ao rolar */
+    position: fixed;
+    /* Fica presa no topo ao rolar */
     padding: 1%;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.2); /* Fundo levemente escuro */
-    backdrop-filter: blur(10px); /* Efeito de vidro embaçado */
-    border-bottom: 1px solid rgba(0, 255, 255, 0.1); /* Linha fina neon */
+    background: rgba(0, 0, 0, 0.2);
+    /* Fundo levemente escuro */
+    backdrop-filter: blur(10px);
+    /* Efeito de vidro embaçado */
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+    /* Linha fina neon */
     padding: 1%;
-    border-radius: 50px; /* Formato de pílula */      
-    border: 1px solid rgba(0, 255, 255, 0.3); /* Borda neon suave */
-    }
+    border-radius: 50px;
+    /* Formato de pílula */
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    /* Borda neon suave */
+}
 
 header nav ul {
     display: flex;
     list-style: none;
     align-items: center;
     gap: 10%;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
     padding: 1rem;
     width: 100%;
-        
+
 }
+
 header nav ul li a {
     color: #00ffff;
     text-decoration: none;
@@ -51,16 +61,21 @@ header nav ul li a {
     text-transform: uppercase;
     transition: 0.3s;
     opacity: 0.8;
-    
+
 }
-header nav ul li a:hover{
+
+header nav ul li a:hover {
     opacity: 1;
-    color: #ff00ff; /* Muda para rosa neon */
+    color: #ff00ff;
+    /* Muda para rosa neon */
     text-shadow: 0 0 10px #ff00ff;
 
 
 }
-@media (max-width: 600px) { /*navegador links fica responsivo*/
+
+@media (max-width: 600px) {
+
+    /*navegador links fica responsivo*/
     .nav-links {
         gap: 15px;
         padding: 10px 20px;
@@ -69,37 +84,52 @@ header nav ul li a:hover{
 }
 
 .conteudo-principal {
-    display: flex;                /* Ativa o alinhamento lado a lado */
-    flex-direction: row;          /* Garante que fiquem em linha */
-    justify-content: space-between; /* Empurra um para cada ponta */
-    align-items: center;          /* Alinha os dois verticalmente no centro */
-    min-height: 100vh;            /* Ocupa a altura toda da tela */
-    padding: 0 10%;                /* Espaço nas laterais */
-    gap: 10px;                    /* Espaço entre o texto e o quadro */
+    display: flex;
+    /* Ativa o alinhamento lado a lado */
+    flex-direction: row;
+    /* Garante que fiquem em linha */
+    justify-content: space-between;
+    /* Empurra um para cada ponta */
+    align-items: center;
+    /* Alinha os dois verticalmente no centro */
+    min-height: 100vh;
+    /* Ocupa a altura toda da tela */
+    padding: 0 10%;
+    /* Espaço nas laterais */
+    gap: 10px;
+    /* Espaço entre o texto e o quadro */
     box-sizing: border-box;
-    
-    
 
-    } /*verficar*/
 
-main .sobre-inicio { 
+
+}
+
+/*verficar*/
+
+main .sobre-inicio {
     display: flex;
     min-height: 100vh;
-    flex-direction: column; /* Empilha o conteúdo */
-    justify-content: center; /*colocar o texto no meio no centro*/
-    padding: 0 5%; /* Recuo lateral */
-    padding-left: 1%;         /* Espaço entre a borda da tela e o painel */
+    flex-direction: column;
+    /* Empilha o conteúdo */
+    justify-content: center;
+    /*colocar o texto no meio no centro*/
+    padding: 0 5%;
+    /* Recuo lateral */
+    padding-left: 1%;
+    /* Espaço entre a borda da tela e o painel */
     box-sizing: border-box;
-    flex: 1;                      /* Ocupa espaço proporcional */
-    max-width: 650px;             /* Largura máxima do texto */
-        
-    }
- 
-main div p{ 
+    flex: 1;
+    /* Ocupa espaço proporcional */
+    max-width: 650px;
+    /* Largura máxima do texto */
+
+}
+
+main div p {
     color: #00ffff;
     padding-left: 1%;
     letter-spacing: 5px;
-    }
+}
 
 main div h1 {
     text-align: left;
@@ -117,73 +147,85 @@ main div h1 {
     /* --- TÉCNICA DO GRADIENTE DE LUZ (A BASE) --- */
     /* Criamos um gradiente que é: Azul -> Rosa -> Luz Branca -> Rosa -> Azul */
     /* A luz branca no meio é o "ponto de luz" que vai se mover */
-    background: linear-gradient(
-        90deg, 
-        #00ffff 0%,   /* Azul inicial */
-        #ff00ff 25%,  /* Rosa */
-        #ffffff 50%,  /* LUZ BRANCA CENTRAL (O brilho móvel) */
-        #ff00ff 75%,  /* Rosa */
-        #00ffff 100%  /* Azul final */
-    );
-    
+    background: linear-gradient(90deg,
+            #00ffff 0%,
+            /* Azul inicial */
+            #ff00ff 25%,
+            /* Rosa */
+            #ffffff 50%,
+            /* LUZ BRANCA CENTRAL (O brilho móvel) */
+            #ff00ff 75%,
+            /* Rosa */
+            #00ffff 100%
+            /* Azul final */
+        );
+
     /* Fazemos o gradiente ser muito maior que o texto para podermos movê-lo */
-    background-size: 200% auto; 
-    
+    background-size: 200% auto;
+
     /* Cortamos o fundo para o formato do texto */
     -webkit-background-clip: text;
     background-clip: text;
-    
+
     /* Deixamos o texto transparente para mostrar o fundo */
     -webkit-text-fill-color: transparent;
-    
+
     /* --- EFEITO DE BRILHO (O "GLOW" ESTÁTICO) --- */
     /* Isso dá a base do neon (Rosa e Azul) para as letras não ficarem apagadas */
-    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.7)) 
-            drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
-            
+    filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.7)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+
     /* --- ATIVAÇÃO DA ANIMAÇÃO --- */
     animation: shineNeon 6s linear infinite;
 
 }
+
 @keyframes shineNeon {
     to {
         /* Movemos a posição do fundo (gradiente) da esquerda para a direita */
         background-position: 200% center;
     }
 }
+
 .painelportifolio {
-    display: inline-block; /* Faz a caixa se ajustar ao tamanho do texto */
-    color: #00ffff; /* Azul Ciano Neon */
+    display: inline-block;
+    /* Faz a caixa se ajustar ao tamanho do texto */
+    color: #00ffff;
+    /* Azul Ciano Neon */
     border: 1px solid rgba(0, 255, 255, 0.3);
-    background: rgba(0, 0, 0, 0.4); /* Fundo um pouco mais escuro para contraste */
+    background: rgba(0, 0, 0, 0.4);
+    /* Fundo um pouco mais escuro para contraste */
     border-radius: 5px;
-    width: 60%;      /* A caixa ocupa apenas 30% da tela */
+    width: 60%;
+    /* A caixa ocupa apenas 30% da tela */
     padding-left: 1%;
-    
+
     /* O Texto */
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 12px;                     /* Espaçamento largo entre as letras */
+    letter-spacing: 12px;
+    /* Espaçamento largo entre as letras */
     margin: 30px 0;
     /* Efeito de Brilho */
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2); 
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
     text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
-  
+
 }
 
 main .portifolio {
     color: aliceblue;
-    font-family: 'Orbitron', sans-serif; /* Aquela fonte futurista */
+    font-family: 'Orbitron', sans-serif;
+    /* Aquela fonte futurista */
     font-size: 2rem;
-        
+
 }
-main div h2{
+
+main div h2 {
     color: #00ffff;
     padding-left: 1%;
     letter-spacing: 5px;
     padding-bottom: 2%;
-   
+
 }
 
 .botão-projetos {
@@ -195,50 +237,75 @@ main div h2{
     text-decoration: none;
     padding: 15px 35px;
     border: 2px solid #00ffff;
-    width: 60%;      /* A caixa ocupa apenas 30% da tela */
+    width: 60%;
+    /* A caixa ocupa apenas 30% da tela */
     border-radius: 5px;
     background: transparent;
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
-    
+
 }
+
 .botão-projetos:hover {
 
     background: #00ffff;
     color: #000;
     box-shadow: 0 0 30px #00ffff, 0 0 60px rgba(0, 255, 255, 0.4);
-    transform: scale(1.05); /* Dá um leve zoom ao passar o mouse */
+    transform: scale(1.05);
+    /* Dá um leve zoom ao passar o mouse */
 }
 
 .quadro-codigo {
-    flex: 1;                      /* Ocupa espaço proporcional */
-    max-width: 300px;             /* Largura máxima do quadro de código */
+    flex: 1;
+    /* Ocupa espaço proporcional */
+    max-width: 300px;
+    /* Largura máxima do quadro de código */
     width: 100%;
     max-width: 500px;
-    background: rgba(13, 13, 13, 0.8); /* Fundo escuro semi-transparente */
+    background: rgba(13, 13, 13, 0.8);
+    /* Fundo escuro semi-transparente */
     border: 1px solid #00ffff;
     border-radius: 12px;
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
     overflow: hidden;
     font-family: 'Fira Code', 'Courier New', monospace;
     backdrop-filter: blur(10px);
-    
+
 }
+
 /* Cabeçalho com os botões coloridos */
 .codigo-header {
-    
+
     background: rgba(0, 255, 255, 0.1);
     padding: 12px 15px;
     display: flex;
     align-items: center;
     border-bottom: 1px solid rgba(0, 255, 255, 0.2);
 }
-.dots { display: flex; gap: 8px; }
-.dot { width: 12px; height: 12px; border-radius: 50%; }
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #ff5f56;
+}
+
+.yellow {
+    background: #ffbd2e;
+}
+
+.green {
+    background: #27c93f;
+}
 
 .window-title {
     margin-left: 20px;
@@ -246,31 +313,53 @@ main div h2{
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
 }
+
 /* Área do Código */
 .code-content {
     display: flex;
     padding: 30px;
     font-size: 0.9rem;
-    line-height: 1.6;  
+    line-height: 1.6;
     height: 10%;
-    
-    
+
+
 }
+
 .lista-numeros {
     display: flex;
     flex-direction: column;
     text-align: right;
     padding-right: 20px;
-    color: rgba(0, 255, 255, 0.3); /* Números de linha discretos */
+    color: rgba(0, 255, 255, 0.3);
+    /* Números de linha discretos */
     user-select: none;
 }
-pre { margin: 0; }
-code { color: #fff; }
+
+pre {
+    margin: 0;
+}
+
+code {
+    color: #fff;
+}
 
 /* Cores de Sintaxe (Syntax Highlighting) */
-.keyword { color: #ff00ff; text-shadow: 0 0 5px #ff00ff; } /* const */
-.variable { color: #00ffff; } /* AnaKelly */
-.string { color: #f1fa8c; }   /* 'Textos' */
+.keyword {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+/* const */
+.variable {
+    color: #00ffff;
+}
+
+/* AnaKelly */
+.string {
+    color: #f1fa8c;
+}
+
+/* 'Textos' */
 
 
 .sobre {
@@ -278,30 +367,36 @@ code { color: #fff; }
     justify-content: center;
     text-align: center;
     min-height: 100vh;
-    padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
+    /* Use MIN-height em vez de height */
+    padding: 100px 10%;
+    /*para não ficar coberto pelo menu de navegação*/
     padding-left: 10%;
-        
-    }
+
+}
 
 .texto-sobremim {
-    max-width: 800px; /* Largura para o texto ficar confortável de ler */
+    max-width: 800px;
+    /* Largura para o texto ficar confortável de ler */
     width: 100%;
     height: 4px;
     background: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
-    }
+}
+
 .painelvidro {
     display: flex;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.03); /* Fundo quase transparente */
-    backdrop-filter: blur(15px);          /* Efeito de desfoque no fundo */
+    background: rgba(255, 255, 255, 0.03);
+    /* Fundo quase transparente */
+    backdrop-filter: blur(15px);
+    /* Efeito de desfoque no fundo */
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
     width: 100%;
-          
+
 }
 
 .titulo-sobremim {
@@ -311,9 +406,10 @@ code { color: #fff; }
     gap: 15px;
     margin-bottom: 40px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2rem; 
-    
+    font-size: 2rem;
+
 }
+
 .texto-sobremim p {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
@@ -321,74 +417,86 @@ code { color: #fff; }
     color: #ffffff;
     margin-bottom: 20px;
 }
+
 .imagemsobre img {
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    flex-wrap: wrap; /* Para funcionar no celular */
     border-radius: 20%;
-      
+
 }
+
 .imagemsobre {
     display: flex;
     margin: 0 14rem;
     border: 1px solid #00ffff;
     border-radius: 20%;
     box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
-    transition: 0.4s; /*para o efeito da foto*/
+    transition: 0.4s;
+    /*para o efeito da foto*/
 }
 
 /* Efeito de brilho extra ao passar o mouse na foto */
 .imagemsobre:hover {
-    box-shadow: 0 0 50px  #00ffff;
+    box-shadow: 0 0 50px #00ffff;
     transform: translateY(-10px);
 }
+
 .projetoslinha {
-    max-width: 800px; /* Largura para o texto ficar confortável de ler */
+    max-width: 800px;
+    /* Largura para o texto ficar confortável de ler */
     height: 4px;
     background: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
-    
+
 .projetos {
     text-align: center;
     color: #00ffff;
     justify-content: center;
     min-height: 100vh;
-    padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
+    padding: 100px 10%;
+    /*para não ficar coberto pelo menu de navegação*/
     font-family: 'Orbitron', sans-serif;
-    font-size: 25px; 
-     
+    font-size: 25px;
+
 }
+
 .contatoslinha {
-    max-width: 800px; /* Largura para o texto ficar confortável de ler */
+    max-width: 800px;
+    /* Largura para o texto ficar confortável de ler */
     height: 4px;
     background: #ff00ff;
     box-shadow: 0 0 10px #ff00ff;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 
 }
+
 .contatos {
     text-align: center;
     color: #00ffff;
     min-height: 100vh;
-    padding: 100px 10%; /*para não ficar coberto pelo menu de navegação*/
+    padding: 100px 10%;
+    /*para não ficar coberto pelo menu de navegação*/
     font-family: 'Orbitron', sans-serif;
-    font-size: 25px; 
-    
+    font-size: 25px;
+
 }
+
 .social-links {
     gap: 15px;
-    width: 30%;      /* A caixa ocupa apenas 30% da tela */
+    width: 30%;
+    /* A caixa ocupa apenas 30% da tela */
     padding-top: 10%;
     margin: auto;
     display: flex;
     flex-direction: column;
-        
-    }
+
+}
+
 .social-card {
     display: flex;
     gap: 20px;
@@ -398,16 +506,20 @@ code { color: #fff; }
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
-    backdrop-filter: blur(20px);          /* Efeito de desfoque no fundo */
-    
+    backdrop-filter: blur(20px);
+    /* Efeito de desfoque no fundo */
+
 }
+
 .social-card:hover {
     border-color: #ff00ff;
     background: rgba(255, 0, 255, 0.05);
-    transform: translateX(10px); /* Move levemente para a direita */
+    transform: translateX(10px);
+    /* Move levemente para a direita */
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.719);
 
 }
+
 .social-title {
     text-align: left;
     display: block;
@@ -415,20 +527,77 @@ code { color: #fff; }
     color: #fff;
     font-size: 1rem;
     letter-spacing: 2px;
-        
+
 }
+
 .social-sub {
-  color: #00ffff;
-    font-size: 0.9rem;  
-    
+    color: #00ffff;
+    font-size: 0.9rem;
+
 }
+
 .textocontatos {
-    backdrop-filter: blur(20px);          /* Efeito de desfoque no fundo */
+    backdrop-filter: blur(20px);
+    /* Efeito de desfoque no fundo */
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgb(2, 244, 252);
     letter-spacing: 2px;
     box-shadow: 0 0 10px rgb(2, 244, 252);
     padding: 20px 20px;
 
-
 }
+
+@media (max-width: 1000px) {
+    .inicio {
+        flex-direction: column;
+    }
+
+    .cabeçalho {
+        display: none;
+    }
+
+    main div h1 {
+        font-size: 3rem;
+    }
+
+    main .portifolio {
+        font-size: 0.80rem;
+
+    }
+
+    .codigo,
+    .code-content {
+        display: none;
+
+    }
+
+    .imagemsobre {
+        display: none;
+    }
+
+    .contatos {
+
+        font-size: 20px;
+
+    }
+
+    .social-links {
+        gap: 10px;
+        width: 100%;
+        /* A caixa ocupa apenas 30% da tela */
+
+    }
+
+    .social-title {
+
+        font-size: 0.50rem;
+        letter-spacing: 1px;
+
+    }
+
+    .social-sub {
+
+        font-size: 0.7rem;
+
+    }
+    }

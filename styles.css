@@ -102,6 +102,7 @@ header nav ul li a:hover {
     /* Espaço entre o texto e o quadro */
     box-sizing: border-box;
 
+
 }
 
 /*verficar*/
@@ -124,6 +125,7 @@ main .sobre-inicio {
     /* Largura máxima do texto */
     border: 1px solid rgba(7, 235, 235, 0.925);
     background: rgba(0, 0, 0, 0.664);
+    border-radius: 5%;
 
 }
 
@@ -212,7 +214,7 @@ main div h1 {
     /* Efeito de Brilho */
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
     text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
-    
+
 
 }
 
@@ -466,7 +468,74 @@ code {
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
 
+
+
 }
+
+.painelprojetosvidro {
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    /* Fundo quase transparente */
+    backdrop-filter: blur(15px);
+    /* Efeito de desfoque no fundo */
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(7, 188, 201, 0.479);
+    border-radius: 10%;
+    text-transform: uppercase;
+    max-width: 500px;
+    text-align: center;
+    margin-left: 33%;
+    margin-top: 5%;
+
+
+}
+
+.card-projeto1 div img {
+    max-width: 300px;
+    border: 1px solid #00ffff;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+.texto-projetos {
+    font-size: 1.2rem;
+    color: #fff;
+    border-color: #000;  
+
+}
+
+.subtexto-projetos {
+    font-size: 0.80rem;
+}
+
+.botoes-grupoprojetos a {
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-cyber-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    background-color: #00f3ff;
+    /* Amarelo clássico Cyberpunk */
+    position: relative;
+    /* Cria o corte na ponta do botão */
+    clip-path: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0% 66%, 0 0);
+    transition: 0.2s;
+    display: inline-block;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.btn-cyber-link:hover {
+  background-color: #ff00ff;
+  transform: translateY(-2px);
+  box-shadow: -5px 5px 0px #ff003c;
+}
+
+
 
 .contatoslinha {
     max-width: 800px;
@@ -579,16 +648,17 @@ code {
 
     main div h1 {
         font-size: 3rem;
-        
-        
+
+
     }
 
     .painelportifolio {
-       margin-top: -1vh;
+        margin-top: -1vh;
         width: 100%;
         /* A caixa ocupa apenas 30% da tela */
-        
+
     }
+
     main div h2 {
         margin-top: -4vh;
     }
@@ -597,6 +667,7 @@ code {
         font-size: 0.8rem;
 
     }
+
     .botão-projetos {
         width: 100%;
         margin-bottom: 1%;
@@ -638,4 +709,24 @@ code {
         font-size: 0.7rem;
 
     }
+
+    .painelprojetosvidro {
+        max-width: 500px;
+        text-align: center;
+        margin-left: 2%;
+        margin-top: 5%;
+
+    }
+
+    .card-projeto1 div img {
+        max-width: 200px;
+
+    }
+
+    .titulo-sobremim {
+        padding-top: 11%;
+    }
+
+
+
 }
